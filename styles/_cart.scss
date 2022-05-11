@@ -1,0 +1,240 @@
+@keyframes cart-btn {
+    0% {
+        transform: scale(1);
+    }
+    30% {
+        transform: scale(1);
+    }
+    40% {
+        transform: scale(1.08);
+    }
+    50% {
+        transform: scale(1);
+    }
+    60% {
+        transform: scale(1);
+    }
+    70% {
+        transform: scale(1.05);
+    }
+    80% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.cart-top {
+    height: 400px;
+    background-image: url(../img/cart-top-backimage.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__title {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 64px;
+        line-height: 70px;
+        color: $color-text;
+        margin-top: 127px;
+    }
+}
+.cart {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+    &__form {
+        height: 556px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background: #f7f6f6;
+        border-radius: 20px;
+        grid-column: span 4;
+    }
+}
+.cart-content {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
+    margin-top: 64px;
+
+    &__order {
+        grid-column: span 8;
+    }
+
+    &__column-headings {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 33px;
+        margin-bottom: 14px;
+    }
+
+    &__item {
+        max-width: 786px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 32px;
+        border-top: 0.5px solid #cacdd8;
+        padding-top: 32px;
+    }
+
+    &__item_description {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    &__item_sum {
+        display: flex;
+        align-self: flex-start;
+        width: 71px;
+        height: 51px;
+        text-align: center;
+
+        background: #f7f6f6;
+        border: #f7f6f6 solid;
+        border-radius: 6px;
+    }
+
+    &__item_about {
+        width: 276px;
+    }
+
+    &__item_links {
+        display: flex;
+        gap: 30px;
+    }
+
+    &__item_link {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 210%;
+        text-decoration-line: underline;
+        color: #000000;
+    }
+    &__item_link:hover {
+        cursor: pointer;
+    }
+
+    &__btns {
+        display: flex;
+        gap: 10px;
+        margin-top: 50px;
+    }
+
+    &__btn {
+        width: 200px;
+        height: 37px;
+        background-color: transparent;
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        border-radius: 50px;
+        transition: all 1s;
+    }
+
+    &__btn:hover {
+        background: #000000;
+        border: 1px solid #000000;
+        color: #ffffff;
+        cursor: pointer;
+    }
+
+    &__left {
+        display: flex;
+        gap: 32px;
+    }
+
+    &__form {
+        height: 556px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background: #f7f6f6;
+        border-radius: 20px;
+        grid-column: span 4;
+    }
+
+    &__form_title {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 36px;
+        padding-top: 42px;
+        padding-bottom: 35px;
+        display: flex;
+        text-align: center;
+        color: #000000;
+    }
+
+    &__form_input {
+        all: unset;
+        width: 288px;
+        margin-bottom: 41px;
+        border-bottom: 1px solid #cacdd8;
+    }
+
+    &__form_input:nth-of-type(3) {
+        margin-bottom: 64px;
+    }
+    &__form_input::placeholder {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+    }
+
+    &__form_total {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+    }
+
+    &__form_btn {
+        width: 290px;
+        height: 41px;
+        margin-top: 18px;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #000000;
+        border: 1px solid #040404;
+        box-sizing: border-box;
+        border-radius: 20px;
+        animation: cart-btn 7s infinite;
+        transition: all 1s;
+    }
+    &__form_btn:hover {
+        background: #000000;
+        border: 1px solid #000000;
+        color: #ffffff;
+        cursor: pointer;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
